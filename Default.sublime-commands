@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Direnv allow",
+        "command": "direnv_allow"
+    }
+]
