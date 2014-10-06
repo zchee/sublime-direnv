@@ -25,6 +25,8 @@ git clone git@github.com:fainder/sublime-direnv.git ~/Library/Application\ Suppo
 When there is .envrc file to open project, choose `Direnv allow` from the command pallete.
 
 # Todo
+It later to modify it because I wrote for myself!
+
 - `direnv deny` support.
 - `direnv reload` support.
 - Refactoring.
