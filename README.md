@@ -51,6 +51,6 @@ export IMG_DIR=$THEME_DIR/img
 # Todo
 It later to modify it because I wrote for myself!
 
-- `direnv deny` support.
-- `direnv reload` support.
-- Refactoring.
+- [ ] `direnv deny` support.
+- [ ] `direnv reload` support.
+- [ ] Refactoring.
