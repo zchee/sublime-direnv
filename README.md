@@ -24,7 +24,10 @@ git clone git@github.com:fainder/sublime-direnv.git ~/Library/Application\ Suppo
 # Usage
 When there is .envrc file to open project, choose `Direnv allow` from the command pallete.
 
-# Sample .envrc
+
+## .envrc Sample
+Do
+
 ```
 export VAGRANT_IP=192.168.33.10
 export THEME_DIR=_theme
@@ -32,6 +35,17 @@ export CSS_DIR=_theme/css
 export JS_DIR=_theme/js
 export SASS_DIR=_theme/sass
 export IMG_DIR=_theme/img
+```
+
+Do not 
+
+```
+export VAGRANT_IP=192.168.33.10
+export THEME_DIR=_theme
+export CSS_DIR=$THEME_DIR/css
+export JS_DIR=$THEME_DIR/js
+export SASS_DIR=$THEME_DIR/sass
+export IMG_DIR=$THEME_DIR/img
 ```
 
 # Todo
