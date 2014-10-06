@@ -11,14 +11,14 @@ class DirenvAllow(sublime_plugin.TextCommand):
             open_envrc = open(envrc_file)
             read_envrc = open_envrc.readlines()
         except:
-            print("Not .envrc file")
+            sublime.status_message("Not .envrc file")
 
         if os.path.exists(envrc_file):
-
-            print("Find .envrc file")
 
             for envrc in read_envrc:
                 replace_export = envrc.replace('export ', '')
                 replace_lf = replace_export.replace('\r\n','')
                 environment = replace_lf.split("=")
                 environ[environment[0]] = environment[1]
+
+            sublime.status_message("Find .envrc file.")
