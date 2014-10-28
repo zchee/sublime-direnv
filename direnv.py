@@ -12,6 +12,8 @@ class DirenvAllow(sublime_plugin.TextCommand):
             read_envrc = open_envrc.readlines()
         except:
             sublime.status_message("Not .envrc file")
+        finally:
+            open_envrc.close()
 
         if os.path.exists(envrc_file):
 
