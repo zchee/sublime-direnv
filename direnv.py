@@ -7,9 +7,8 @@ class DirenvAllow(sublime_plugin.TextCommand):
         window = sublime.active_window()
         folder = window.folders()[0]
         envrc_file = folder + "/.envrc"
-        try:
-            open_envrc = open(envrc_file)
-            read_envrc = open_envrc.readlines()
+        open_envrc = open(envrc_file)
+        read_envrc = open_envrc.readlines()
         except:
             sublime.status_message("Not .envrc file")
         finally:
