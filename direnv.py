@@ -7,11 +7,10 @@ class DirenvAllow(sublime_plugin.TextCommand):
         window = sublime.active_window()
         folder = window.folders()[0]
         envrc_file = folder + "/.envrc"
-        
-        with open(envrc_file) as open_envrc
-            read_envrc = open_envrc.readlines()
 
         if os.path.exists(envrc_file):
+          with open(envrc_file) as open_envrc:
+            read_envrc = open_envrc.readlines()
             for envrc in read_envrc:
                 replace_export = envrc.replace('export ', '')
                 replace_lf = replace_export.replace('\r\n','')
