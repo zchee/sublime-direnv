@@ -8,11 +8,7 @@ That is why I made this.
 # Instration
 
 ## Package Control
-
 If you have PackageControl installed, you can use it to install the package.
-
-### Warning!
-It has not been merged into Package Control still
 
 ## Manual
 You can clone the repository in your `/Packages` folder.
